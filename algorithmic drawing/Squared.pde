@@ -9,6 +9,8 @@ float color1 = 128;
 float color2 = 128;
 float color3 = 128;
 int increment = 0;
+//checker pour regarder si l'utilisateur a mis en pause
+boolean paused = false;
 
 void setup()
 {
@@ -60,7 +62,10 @@ void CubeSpin(int number)
 
 void draw ()
 {
-  CubeSpin(increment);
+  //permet de vérifier si nous sommes en pause
+  if (!paused) {
+    CubeSpin(increment);
+  }
 }
 
 /*
@@ -73,7 +78,7 @@ void keyPressed(){
   //permet d'augmenter le nombre de cube généré
   if(key=='+')
   {
-    if (increment != 50)
+    if (increment != 50 && paused == false)
     {
       increment++;
     }
@@ -81,8 +86,14 @@ void keyPressed(){
   //permet de réduire le nombre de cube généré
   if(key=='-')
   {
-    if (increment != 0){
+    if (increment != 0 && paused == false){
+      
       increment--;
     }
+  }
+  //permet de mettre en pause le code
+  if (key == ' ') 
+  {
+    paused = !paused;
   }
 }
