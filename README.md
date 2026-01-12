@@ -1,2 +1,2 @@
-# Esth-tiques-Algorithmiques
+# Esthétiques-Algorithmiques
 Workshop IMAC 1 | Esthétiques Algorithmiques
