@@ -1,0 +1,396 @@
+:: StoryTitle
+Poem_genrator
+
+
+:: StoryData
+{
+  "ifid": "A4ED6DDA-0675-4EE8-958F-174D93F2FF00",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: Final {"position":"1825,1175","size":"100,100"}
+Et voici ton poème $auteur !
+
+$phrase1
+$phrase2
+$phrase3
+$phrase4
+
+$phrase5
+$phrase6
+$phrase7
+$phrase8
+
+$phrase9
+$phrase10
+$phrase11
+$phrase12
+
+{
+(set: $phrase1 = "")
+(set: $phrase2 = "")
+(set: $phrase3 = "")
+(set: $phrase4 = "")
+(set: $phrase5 = "")
+(set: $phrase6 = "")
+(set: $phrase7 = "")
+(set: $phrase8 = "")
+(set: $phrase9 = "")
+(set: $phrase10 = "")
+(set: $phrase11 = "")
+(set: $phrase12 = "")
+(set: $phrase13 = "")
+(set: $phrase14 = "")
+(set: $phrase15 = "")
+(set: $phrase16 = "")
+(set: $auteur = "")
+
+Si tu veux réessayer :
+(link-goto: "Réessayer", "Start")
+}
+
+
+:: Let's go!\  {"position":"1250,175","size":"100,100"}
+{
+(set: $auteur to (prompt: "Tout d'abord, choisissez votre nom d'auteur :",""))
+
+(if: $auteur is not "")[Super $auteur, alors c'est parti !]
+}
+
+[[Premier poème]]
+
+
+:: Pas trop trop... {"position":"1000,300","size":"100,100"}
+T'as pas le choix de toute façon
+
+[[Let's go! <- Bon ok...]]
+
+
+:: Poeme10 {"position":"1675,825","size":"100,100"}
+Poème 10
+
+(link: "Dans la forêt, règne un parfum de fleur")[
+    (set:$phrase10 = "Dans la forêt, règne un parfum de fleur")
+    (goto:"Poeme11")
+]
+
+(link: "Les oiseaux chantent avec douceur et ardeur")[
+    (set:$phrase10 = "Les oiseaux chantent avec douceur et ardeur")
+    (goto:"Poeme11")
+]
+
+(link: "Chaque sentier me révèle sa valeur")[
+    (set:$phrase10 = "Chaque sentier me révèle sa valeur")
+    (goto:"Poeme11")
+]
+
+(link: "Et je marche libre avec tout mon cœur")[
+    (set:$phrase10 = "Et je marche libre avec tout mon cœur")
+    (goto:"Poeme11")
+]
+
+
+
+:: Poeme11 {"position":"1500,1000","size":"100,100"}
+Poème 11
+
+(link: "Sous les étoiles brille une lointaine lueur")[
+    (set:$phrase11 = "Sous les étoiles brille une lointaine lueur")
+    (goto:"Poeme12")
+]
+
+(link: "Le voyage continue avec ferveur et ardeur")[
+    (set:$phrase11 = "Le voyage continue avec ferveur et ardeur")
+    (goto:"Poeme12")
+]
+
+(link: "Chaque route m’offre une nouvelle saveur")[
+    (set:$phrase11 = "Chaque route m’offre une nouvelle saveur")
+    (goto:"Poeme12")
+]
+
+(link: "Et le monde entier danse autour de mon cœur")[
+    (set:$phrase11 = "Et le monde entier danse autour de mon cœur")
+    (goto:"Poeme12")
+]
+
+
+
+:: Poeme12 {"position":"1650,1000","size":"100,100"}
+Poème 12
+
+(link: "Sur les chemins où danse la lueur")[
+    (set:$phrase12 = "Sur les chemins où danse la lueur")
+    (goto:"Final")
+]
+
+(link: "Je découvre mille secrets de valeur")[
+    (set:$phrase12 = "Je découvre mille secrets de valeur")
+    (goto:"Final")
+]
+
+(link: "Chaque rencontre ajoute sa saveur")[
+    (set:$phrase12 = "Chaque rencontre ajoute sa saveur")
+    (goto:"Final")
+]
+
+(link: "Et la route devient ma meilleure chaleur")[
+    (set:$phrase12 = "Et la route devient ma meilleure chaleur")
+    (goto:"Final")
+]
+
+
+
+:: Poeme2 {"position":"1675,200","size":"100,100"}
+Poème 2
+
+(link: "Le temps passe, mais garde sa valeur")[
+    (set:$phrase2 = "Le temps passe, mais garde sa valeur")
+    (goto:"Poeme3")
+]
+
+(link: "Nos souvenirs sont de doux bonheurs")[
+    (set:$phrase2 = "Nos souvenirs sont de doux bonheurs")
+    (goto:"Poeme3")
+]
+
+(link: "Ton amour est mon seul cœur")[
+    (set:$phrase2 = "Ton amour est mon seul cœur")
+    (goto:"Poeme3")
+]
+
+(link: "Ma vie rayonne de sa chaleur")[
+    (set:$phrase2 = "Ma vie rayonne de sa chaleur")
+    (goto:"Poeme3")
+]
+
+
+
+:: Poeme3 {"position":"1500,350","size":"100,100"}
+Poème 3
+
+(link: "Nos chemins se croisent avec ardeur")[
+    (set:$phrase3 = "Nos chemins se croisent avec ardeur")
+    (goto:"Poeme4")
+]
+
+(link: "Ton nom résonne en moi comme un chœur")[
+    (set:$phrase3 = "Ton nom résonne en moi comme un chœur")
+    (goto:"Poeme4")
+]
+
+(link: "Chaque parole, chaque douceur")[
+    (set:$phrase3 = "Chaque parole, chaque douceur")
+    (goto:"Poeme4")
+]
+
+(link: "Est une étoile dans mon cœur")[
+    (set:$phrase3 = "Est une étoile dans mon cœur")
+    (goto:"Poeme4")
+]
+
+
+
+:: Poeme4 {"position":"1675,350","size":"100,100"}
+Poème 4
+
+(link: "Quand l’ombre tombe, tu es ma lueur")[
+    (set:$phrase4 = "Quand l’ombre tombe, tu es ma lueur")
+    (goto:"Poeme5")
+]
+
+(link: "Ton amour chasse toute terreur")[
+    (set:$phrase4 = "Ton amour chasse toute terreur")
+    (goto:"Poeme5")
+]
+
+(link: "Rien n’égale ta belle chaleur")[
+    (set:$phrase4 = "Rien n’égale ta belle chaleur")
+    (goto:"Poeme5")
+]
+
+(link: "Qui habite pour toujours mon cœur")[
+    (set:$phrase4 = "Qui habite pour toujours mon cœur")
+    (goto:"Poeme5")
+]
+
+
+
+:: Poeme5 {"position":"1500,500","size":"100,100"}
+Poème 5
+
+(link: "Ton regard m’enchaîne comme une doctrine")[
+    (set:$phrase5 = "Ton regard m’enchaîne comme une doctrine")
+    (goto:"Poeme6")
+]
+
+(link: "Chaque sourire est ma tendre origine")[
+    (set:$phrase5 = "Chaque sourire est ma tendre origine")
+    (goto:"Poeme6")
+]
+
+(link: "Je me perds dans ton monde fascine")[
+    (set:$phrase5 = "Je me perds dans ton monde fascine")
+    (goto:"Poeme6")
+]
+
+(link: "Et ton amour guide ma douce marine")[
+    (set:$phrase5 = "Et ton amour guide ma douce marine")
+    (goto:"Poeme6")
+]
+
+
+
+:: Poeme6 {"position":"1675,500","size":"100,100"}
+Poème 6
+
+(link: "Ta voix résonne comme une voisine")[
+    (set:$phrase6 = "Ta voix résonne comme une voisine")
+    (goto:"Poeme7")
+]
+
+(link: "Qui chante au cœur des rues et des cimes")[
+    (set:$phrase6 = "Qui chante au cœur des rues et des cimes")
+    (goto:"Poeme7")
+]
+
+(link: "Ton amour fait fleurir ma jardine")[
+    (set:$phrase6 = "Ton amour fait fleurir ma jardine")
+    (goto:"Poeme7")
+]
+
+(link: "Et apaise mes nuits d’ombre et de brime")[
+    (set:$phrase6 = "Et apaise mes nuits d’ombre et de brime")
+    (goto:"Poeme7")
+]
+
+
+
+:: Poeme7 {"position":"1500,650","size":"100,100"}
+Poème 7
+
+(link: "Tes mots doux sont comme une choline")[
+    (set:$phrase7 = "Tes mots doux sont comme une choline")
+    (goto:"Poeme8")
+]
+
+(link: "Qui coule et réchauffe mon matin")[
+    (set:$phrase7 = "Qui coule et réchauffe mon matin")
+    (goto:"Poeme8")
+]
+
+(link: "Ton amour est ma tendre doctrine")[
+    (set:$phrase7 = "Ton amour est ma tendre doctrine")
+    (goto:"Poeme8")
+]
+
+(link: "Et chaque jour je t’aime plus encore et plus loin")[
+    (set:$phrase7 = "Et chaque jour je t’aime plus encore et plus loin")
+    (goto:"Poeme8")
+]
+
+
+
+:: Poeme8 {"position":"1675,650","size":"100,100"}
+Poème 8
+
+(link: "Ton sourire est une lumière célestine")[
+    (set:$phrase8 = "Ton sourire est une lumière célestine")
+    (goto:"Poeme9")
+]
+
+(link: "Qui éclaire mes pas sur chaque ligne")[
+    (set:$phrase8 = "Qui éclaire mes pas sur chaque ligne")
+    (goto:"Poeme9")
+]
+
+(link: "Et dans tes bras, douce et divine")[
+    (set:$phrase8 = "Et dans tes bras, douce et divine")
+    (goto:"Poeme9")
+]
+
+(link: "Je trouve enfin ma paix et ma marine")[
+    (set:$phrase8 = "Je trouve enfin ma paix et ma marine")
+    (goto:"Poeme9")
+]
+
+
+
+:: Poeme9 {"position":"1500,825","size":"100,100"}
+Poème 9
+
+(link: "Sous le ciel vaste, je cherche l’hauteur")[
+    (set:$phrase9 = "Sous le ciel vaste, je cherche l’hauteur")
+    (goto:"Poeme10")
+]
+
+(link: "Des montagnes qui brillent de chaleur")[
+    (set:$phrase9 = "Des montagnes qui brillent de chaleur")
+    (goto:"Poeme10")
+]
+
+(link: "Les rivières murmurent avec douceur")[
+    (set:$phrase9 = "Les rivières murmurent avec douceur")
+    (goto:"Poeme10")
+]
+
+(link: "Et chaque instant m’emplit de bonheur")[
+    (set:$phrase9 = "Et chaque instant m’emplit de bonheur")
+    (goto:"Poeme10")
+]
+
+
+
+:: Premier poème {"position":"1500,200","size":"100,100"}
+Poème 1
+
+(link: "Dans tes yeux brille une douce lueur")[
+    (set:$phrase1 = "Dans tes yeux brille une douce lueur")
+    (goto:"Poeme2")
+]
+
+(link: "Ton sourire chasse toute ma peur")[
+    (set:$phrase1 = "Ton sourire chasse toute ma peur")
+    (goto:"Poeme2")
+]
+
+(link: "Chaque moment près de toi, mon cœur")[
+    (set:$phrase1 = "Chaque moment près de toi, mon cœur")
+    (goto:"Poeme2")
+]
+
+(link: "Vibre au rythme de ta tendre chaleur")[
+    (set:$phrase1 = "Vibre au rythme de ta tendre chaleur")
+    (goto:"Poeme2")
+]
+
+
+
+:: Start {"position":"925,125","size":"100,100"}
+Bonjour à toi jeune écrivain, tu auras pour but de créer un poème en partant de différents écrits généré par mes soins !
+Alors, es tu prêt à faire une véritable masterclass ?
+
+[[Let's go! <- Let's go !]]
+[[Pas trop trop...]]
+
+(set: $phrase1 to "")
+(set: $phrase2 to "")
+(set: $phrase3 to "")
+(set: $phrase4 to "")
+(set: $phrase5 to "")
+(set: $phrase6 to "")
+(set: $phrase7 to "")
+(set: $phrase8 to "")
+(set: $phrase9 to "")
+(set: $phrase10 to "")
+(set: $phrase11 to "")
+(set: $phrase12 to "")
+(set: $phrase13 to "")
+(set: $phrase14 to "")
+(set: $phrase15 to "")
+(set: $phrase16 to "")
+(set: $auteur to "")
